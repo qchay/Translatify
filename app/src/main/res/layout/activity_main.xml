@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundMain"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/translationBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input"
+                android:gravity="top|left"
+                android:layout_weight="4"
+                android:padding="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:maxHeight="0dp"
+                android:background="@drawable/round_textbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/clipboard_border"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/clipboardTop"
+        android:layout_weight=".5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/clipboard"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+</RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/translateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight=".5"
+            android:backgroundTint="@color/logoColor"
+            android:background="@drawable/button_style"
+            android:text="Translate"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:entries="@array/Languages"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/result"
+                android:gravity="top|left"
+                android:layout_weight="4"
+                android:padding="8dp"
+                android:layout_marginLeft="20dp"
+                android:maxHeight="0dp"
+                android:background="@drawable/round_textbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/clipboard_border"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/clipboardBottom"
+                    android:layout_weight=".5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/clipboard"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<Button-->
+                <!--android:id="@+id/clipboardBottom"-->
+                <!--android:background="@mipmap/clipboard"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_alignTop="@+id/result"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:layout_alignRight="@+id/result"-->
+                <!--android:layout_height="40dp" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/result"-->
+                <!--android:gravity="top|left"-->
+                <!--android:padding="8dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:maxHeight="0dp"-->
+                <!--android:background="@drawable/round_textbox"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="130dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--/>-->
+        <!--</RelativeLayout>-->
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:padding="0dp"
+            app:backgroundTint="@color/white"
+            android:src="@drawable/ic_add_circle_black_24dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
