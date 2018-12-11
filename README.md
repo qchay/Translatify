@@ -7,7 +7,8 @@ My app detects and recognizes text by camera and has the ability to translate th
 <a href="url"><img src="https://github.com/qchay/Translatify/blob/master/images/Languages.png" align="left" height="300" width="200" ></a>
 <a href="url"><img src="https://github.com/qchay/Translatify/blob/master/images/OCR.png" align="left" height="300" width="200" ></a>
 
-
+<br />
+<br />
 ## API:
 Google translate-Used to translate the texts
 Google Vision - Used to recognize the text from the Camera
