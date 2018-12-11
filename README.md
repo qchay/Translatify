@@ -1,6 +1,12 @@
 # Translatify
 My app detects and recognizes text by camera and has the ability to translate the text to another language
 
+## Screenshot:
+![Splash](https://github.com/qchay/Translatify/blob/master/images/Splash.png?raw=true)
+![Translate](https://github.com/qchay/Translatify/blob/master/images/Translate.png?raw=true)
+![Language](https://github.com/qchay/Translatify/blob/master/images/Languages.png?raw=true)
+![OCR](https://github.com/qchay/Translatify/blob/master/images/OCR.png?raw=true)
+
 ## API:
 Google translate-Used to translate the texts
 Google Vision - Used to recognize the text from the Camera
